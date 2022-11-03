@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- 
+Project: Project3- Responsive Web  Site
+Name: Vanessa Jackson
+Submitted: 11/2/2022
+
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+
+What I enjoyed about this project was the creativity of making a website dedicated to delicious french fries.
+What I struggled with was basically all of it. I wanted to create filter checkboxes for finding a perfect fry combination
+but that took way longer then I expected and I had some issues with the hide and show functions as well as the flexbox side.
+All in all it all took me a lot longer then expected and I ran out of time to keep making it better and working it to the point that
+I wanted. I wasn't even able to do many of the extra credit parts because I wasted time on the javascript that I was stuck on.
+I don't regret that, though, since I feel like I learned a lot by suffering.
+-->
+<html LANG="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fry Finder</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+	<div id="content">
+		<header>
+            <div id="itemDisplay">
+                <div>
+                    <h1>Fry Finder 2022 
+
+                    </h1>
+                    <img src="/img/fries_small.jpg" class="logo" alt="Time to get hungry for fries" title="Loaded fries">
+                </div>
+                <div>
+                    ... a site dedicated to eating delicious fries with delicious sauces to dip them in...
+                </div>
+            </div>
+        </header>
+        <aside><h1>Fry Search!</h1>
+            Filter by:
+            <ul class="filterSection">
+                <u>Type:</u>
+                <li>
+                    <input checked="false" type="checkbox" value="cajan"/>
+                    <label>cajan</label>
+                </li>
+                <li>
+                    <input checked="false" type="checkbox" value="garlic"/>
+                    <label>garlic</label>
+                </li>
+                <li>
+                    <input checked="false" type="checkbox" value="rosemary"/>
+                    <label>rosemary</label>
+                </li>
+                <li>
+                    <input checked="false" type="checkbox" value="smothered"/>
+                    <label>smothered</label>
+                </li>
+            </ul>
+            <ul class="filterSection">
+                <u>Sauce:</u>
+                <li>
+                    <input checked="false" type="checkbox" value="ranch"/>
+                    <label>ranch</label>
+                </li>
+                <li>
+                    <input checked="false" type="checkbox" value="frySauce"/>
+                    <label>fry sauce</label>
+                </li>
+                <li>
+                    <input checked="false" type="checkbox" value="buffalo"/>
+                    <label>buffalo</label>
+                </li>
+                <li>
+                    <input checked="false" type="checkbox" value="special"/>
+                    <label>special</label>
+                </li>
+            </ul>
+            <ul class="nav-buttons">            
+                <li><button class="button selected" id="search" name="finder"><b>Fry Finder </b><br> Click to go to the FryFinder page... check boxes to build fries.</b></button></li>
+            </ul>
+            <br>
+            Filter your fry search to find the perfect fries. &#127839
+        </aside>
+
+        <main>
+            <section id="top5Section" class="hideItem"> 
+                <h2>The Best (Top) <b>5</b> French Fries I've ever eaten:</h2>
+                <div class="itemDisplay">
+                        <img src="/img/superChix.jpg" alt="Super Chix's cajan fries" title="Cajan Fries at Super Chix" class="fryPic">
+                        <div>
+                            <h3>Super Chix </h3>
+                            <p>Best to order there: Cajan Fries with ranch dipping sauce
+                                OR The Loaded Fries- Comes covered in Queso Blanco, Bacon, and diced green onions.
+                            </p>
+                        </div>
+                </div>
+                
+                <div class="itemDisplay">
+                    <img src="/img/goodTimes.jpg" alt="Good Times crazy fries" title="Good Times crazy fries" class="fryPic">
+                    <div>
+                        <h3>Good Times Burgers and Fries</h3>
+                        <p>Best to order there: Crazy Fries with Wild Dippin' Sauce. If you're ever in Colorado, these are the best fries in the state.
+                        </p>
+                        </div>
+                </div>
+
+                <div class="itemDisplay">
+                    <img src="/img/slapFish.jpg" alt="Slap Fish's clam chowder smothered fries" title="Slap Fish's clam chowder smoothered fries" class="fryPic">
+                    <div>
+                        <h3> Slap Fish </h3>
+                        <p>Best to order there: Clam Chowder Fries... Seriously good- fries covered in clam chowder.
+                        </p>
+                        </div>
+                </div>
+
+                <div class="itemDisplay">
+                    <img src="/img/boutTime.jpg" alt="Endless garlic fries at Bout Time Pub & Grill" title="Endless garlic fries at Bout Time Pub & Grill" class="fryPic">
+                    <div>
+                    <h3>Bout Time Pub & Grub</h3>
+                    <p>Best to order there: They have endless garlic fries- the combination of 'all you can eat' and fries with fresh minced garlic on them is killer.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="itemDisplay">
+                    <img src="/img/inNOut.jpg" alt="In N Out Animal Fries" title="In N Out Animal Fries" class="fryPic">
+                    <div>
+                        <h3>In N Out</h3>
+                        <p>Best to order there: Fries Animal Style- The topping makes these fries pretty good but it's best to eat them quickly because they're not very good once they sit out for 10-15 minutes.
+                        </p>
+                        </div>
+                </div>
+                
+
+            </section>
+            <section id="ranchSection" class="hideItem"> 
+                <h2>
+                    Best Ranch
+                </h2>
+                The right ranch sauce is runnier then bottled ranch dressing and has a freshness that is delicious.
+                It also has a consistency that is perfect to dip your fries in.
+                <br>
+                <award>The award for best ranch sauce goes to...</award>
+                <div>
+                    <figure>
+                        <img src="/img/superChix.jpg" alt="Super Chix's cajan fries" title="Cajan Fries at Super Chix" class="best">
+                        <figcaption>
+                            A picture of their delicious cajan fries- which are perfect with their ranch sauce.
+                        </figcaption>
+                    </figure>
+                    <h3>Super Chix </h3>
+                    Best to order there: Cajan Fries with ranch dipping sauce <br>
+                    OR The Loaded Fries- Comes covered in Queso Blanco, Bacon, and diced green onions.</li>                </div>
+            <br>
+            Find Super Chix on Google Maps
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194519.9113431111!2d-111.90644530427294!3d40.378411403184806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuper%20Chix!5e0!3m2!1sen!2sus!4v1666999502047!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section id="loadedSection" class="hideItem"> 
+                <h2>
+                    Best Loaded
+                </h2>
+                    It's hard to describe the best loaded fries. I could dedicate a whole section to all of the different loaded fries out there... probably the next thing this website needs to add. &#128558
+                    <br>
+                    There are chili cheese fries, fries smothered in sauce, cheeses, onions, bacon bits, soup... so many different kinds and such a wonder of decliciousness.
+                <br>
+                <award>The award for best smothered/loaded fries goes to...</award>
+                <div>
+                    <figure>
+                        <img src="/img/slapFish.jpg" alt="Slap Fish's clam chowder smothered fries" title="Slap Fish's clam chowder smoothered fries" class="best">
+                        <figcaption>
+                            A picture of their delicious clam chowder fries, topped with soup of all things, but unquestionably crave-able.
+                        </figcaption>
+                        </figure>
+                    <h3>Slap Fish </h3>
+                    Best to order there: Clam Chowder Fries... Seriously good- fries covered in clam chowder.
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E9Dlo1yAGj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <figcaption>
+                    Click on the video above to see what goes into these amazing fries...
+                </figcaption>
+                <br>
+                Find SlapFish on Google Maps
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194518.93534959087!2d-111.9050712198066!3d40.378749446192735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sslapfish!5e0!3m2!1sen!2sus!4v1666999207980!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section id="garlicSection" class="hideItem"> 
+                <h2>
+                    Best Garlic Fries
+                </h2>
+                The gest garlic fries are covered in freshly minced garlic, not the gross bottled stuff and <i>definietly</i> not the powdered dried stuff.
+                Ideally, the best garlic fries come with parsley  lightly sprinkled on top and some sort of dipping sauce that mellows the bite of the fresh garlic.
+                <br>
+                <award>The award for best garlic fries goes to...</award>
+                <div>
+                    <figure>
+                    <img src="/img/boutTime.jpg" alt="Bout Time's endless garlic fries" title="Bout Time's endless garlic fries" class = "best">
+                    <figcaption>
+                        A picture of the delicious garlic fries in question.
+                    </figcaption>
+                    </figure>
+
+                    <h3>Bout Time Pub & Grub </h3>
+                    Best to order there: Cajan Fries with ranch dipping sauce <br>
+                    OR The Loaded Fries- Comes covered in Queso Blanco, Bacon, and diced green onions.</li>
+                </div>
+                <br>
+                Find Bout Time Pub & Grill near me on Google Maps
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194519.4233474314!2d-111.90575826203927!3d40.378580424607655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBout%20Time%20Pub%20%26%20Grub!5e0!3m2!1sen!2sus!4v1666999361280!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+
+
+            <section id="finderSection" class="hideItem"> <h2>--FryFinder-- </h2>
+                Click below to go to the website... All menus subject to change.
+                <frySearch>
+                    <ul id="itemsToFilter">
+                        <li data-type="ranch cajan rosemary frySauce buffalo special smothered"><a href="https://www.superchix.com/" target="_blank">Super Chix</a></li>
+                        <li data-type="smothered"><a href="https://www.in-n-out.com/" target="_blank">In N Out</a></li>
+                        <li data-type="smothered"><a href="https://www.slapfishrestaurant.com/" target="_blank">Slap Fish</a></li>
+                        <li data-type="garlic special"><a href="https://www.bouttimepub.com/" target="_blank">Bout Times</a></li>
+                        <li data-type="cajan frySauce"><a href="https://www.fiveguys.com/" target="_blank">Five Guys</a></li>
+                        <li data-type="smothered"><a href="https://www.jcws.com/" target="_blank">JCW's</a></li>
+                        <li data-type="smothered rosemary"><a href="https://www.cubbys.co/" target="_blank">Cubby's</a></li>
+                        <li data-type="ranch"><a href="https://www.habitburger.com/" target="_blank"> Habit Burger</a></li>
+                    </ul>
+                </frySearch>
+            </section>
+            
+        </main>
+
+        <nav>
+            <ul class="nav-buttons">
+                <!-- <button class="button active" onclick="filterSelection('all')"> Show all</button> -->
+                <li><button class="button selected" name="top5" id="home">My top 5 favorite fries (Home)</button></li>
+                </ul>
+                <ul class="nav-buttons">
+                <li><button class="button selected" name="garlic">Best garlic fries</button></li>
+                <li><button class="button selected" name="loaded">Best loaded fries</button></li>
+                <li><button class="button selected" name="ranch">Best ranch sauce</button></li>
+
+            </ul>
+        </nav>
+        <footer>
+            <ul>
+                <li>
+                    <h2>About</h2>
+                    This site is dedicated to everyone who loves to go out for delicious fries and feels passionate about eating the tastiest fries out there. 
+                    <br>&#129505                 
+                    <img src = "img/kawaiiFry.jpg" alt="Click the Fry Finder to find the fries of your dreams!" title="Click the Fry Finder button above to search for the fries of your dreams!" width="200">
+                    <figcaption>All information on this site is subject to the author's eating out experiences and may not contain all fry information possible...
+                        <br><i> This content is intended for entertainment purposes only.</i>
+                    </figcaption>
+                    <!-- About -->
+                </li>
+            </ul>
+        </footer>
+
+	</div>
+<script src=" js/index.js"></script>
+</body>
+</html>
