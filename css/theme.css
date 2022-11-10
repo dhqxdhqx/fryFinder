@@ -1,0 +1,78 @@
+:root {
+    --header-color:white;
+    --font-color:rgb(81, 2, 112);
+    --bg-color:rgb(240, 240, 240);
+    --button-color:rgb(151, 106, 165);
+    --content-color: rgba(243, 229, 200, 0.8);
+    font-family: 'Verdana';
+}
+
+h1{
+color:var(--font-color);
+}
+h2{
+color:rgb(167, 47, 172);
+}
+award{
+color:rgb(167, 47, 172);
+}
+#top5Section h3{
+color:rgb(167, 47, 172);
+
+}
+.filterSection {
+background-color:rgba(255, 255, 255, 0.3);
+}
+#content footer{
+background: rgb(219 221 199) !important;
+}
+footer img{
+float:left;
+margin: 10px;
+}
+frySearch a{
+color:rgb(167, 47, 172)
+}
+.logo{
+box-shadow: 0 12px 16px 0 rgba(108, 9, 189, 0.54), 0 17px 50px 0 rgba(108, 9, 189, 0.24);
+padding: 0px;
+margin: 8px;
+}
+#content nav{
+justify-content: center;
+background-color: rgba(60, 26, 61, 0.9);
+}
+#content aside{
+justify-content: center;
+background-color: rgb(176, 161, 180, .8);
+}
+body{
+font-size:xx-large;
+}
+.filterSection li {
+    text-align: center;
+}
+
+
+/*Mobile setup*/
+#content{
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "aside aside aside footer";
+}
+
+/* desktop setup */
+@media all and (min-width: 900px){
+#content{
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+}
+}

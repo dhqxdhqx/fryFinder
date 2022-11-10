@@ -1,7 +1,7 @@
 // Logic for menu buttons navigating around the page
 let pageSections=["top5", "garlic", "loaded", "ranch", "finder"];
 
-let navElements = document.querySelectorAll("button")
+let navElements = document.getElementsByClassName("button")
 
 for (let i = 0; i < navElements.length; ++i){
       navElements[i].addEventListener("click", function(ev){
@@ -155,3 +155,29 @@ function removeClass(element, classToRemove) {
   
     element.className = filteredList.join(" ");
 }
+
+//Logic for applying the theme and the theme button
+let theme = document.getElementById("themestylesheet")
+theme.disabled = "true"
+
+let themeBtn = document.getElementById("theme")
+themeBtn.addEventListener("click", function(ev){
+    let el = ev.currentTarget
+    el.classList.toggle("clicked")
+
+    // Button toggles inner text 
+    if (el.innerHTML == "Purple Theme 💜"){
+        el.innerHTML = "Classic Theme"
+    } else {
+        el.innerHTML = "Purple Theme 💜"
+    }
+
+    let theme = document.getElementById("themestylesheet")
+    if(theme.disabled){
+        theme.disabled = false
+    }
+    else{
+        theme.disabled = true
+    }})
+
+
