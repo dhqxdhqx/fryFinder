@@ -233,14 +233,94 @@ I don't regret that, though, since I feel like I learned a lot by suffering.
                     </ul>
                 </frySearch>
             </section>
-            
+        <section id="visitorSection" class="hideItem"> 
+            <div class="container">
+                <h2> Visitor Information</h2>
+                <div id="success" class="successMessage hideItem">
+                Thank you for leaving your visitor comments!
+                </div>
+                <form id="myForm" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+                    
+                    <ul class="flex">
+                        <div class="textInputs">
+                        <li class="section-display">
+                            <label for="firstName" >First Name:</label>
+                            <input type="text" id="firstName"name="firstName" placeholder="First Name" autofocus>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="lastName" placeholder="Last Name">Last Name:</label>
+                            <input type="text" id="lastName"name="lastName" placeholder="Last Name">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address"name="address" placeholder="Address">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="city">City:</label>
+                            <input type="text" id="city"name="city" placeholder="City">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="state">State:</label>
+                            <input type="text" id="state"name="state" placeholder="XX">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="zip">Zip:</label>
+                            <input type="text" id="zip"name="zip" placeholder="00000">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email"name="email" placeholder="someone@somewhere.com">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="section-display">
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone"name="phone" placeholder="XXX-XXX-XXXX">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                        </div>
+                            <h3>How did you find this page? </h3>
+                        </li>
+                        <li>
+                            <input type="radio" id="google" name="findPage" value="google">
+                            <label for="google">Google or some other search engine...</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="friend" name="findPage" value="friend">
+                            <label for="friend">Heard about it from a friend.</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="other" name="findPage" value="other">
+                            <label for="other">Found it some other way...</label>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <h2>Additional Comments (Optional):</h2>
+                        </li>
+                        <li>
+                            <label for="comments"></label>
+                            <textarea id="comments" name="comments" placeholder="Type any additional comments here" rows="5" cols="50"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit" id="submitBtn" class="submitMe">Submit 👆</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>        
         </main>
 
         <nav>
             <ul class="nav-buttons">
                 <!-- <button class="button active" onclick="filterSelection('all')"> Show all</button> -->
                 <li><button class="button selected" name="top5" id="home">My top 5 favorite fries (Home)</button></li>
-                </ul>
+                <li><button class="button selected" name="visitor" id="visitor">Log Visit</button></li>    
+            </ul>
                 <ul class="nav-buttons">
                 <li><button class="button selected" name="garlic">Best garlic fries</button></li>
                 <li><button class="button selected" name="loaded">Best loaded fries</button></li>
@@ -268,6 +348,8 @@ I don't regret that, though, since I feel like I learned a lot by suffering.
         </footer>
 
 	</div>
-<script src=" js/index.js"></script>
+<script src=" js/main.js"></script>
+<script src="js/validation.js" defer></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 </body>
 </html>
